@@ -14,10 +14,10 @@ const Services = () => {
       <div className="grid grid-cols-3 gap-10 mx-20">
         <div className="flex flex-col shadoww items-center gap-5 p-8 rounded-2xl hover:scale-105 dark:hover:bg-arena dark:hover:text-dark-blue transition-all hover:bg-dark-blue hover:text-arena">
           <div className="bg-verde-agua flex items-center justify-center rounded-full w-fit z-10">
-            <Link href={'/servicios'}><FaFireAlt className="text-8xl p-6" /></Link>
+            <FaFireAlt className="text-8xl p-6" />
           </div>
           <h3 className={`${nunito.className} text-2xl font-bold text-center`}>Idear</h3>
-          <FaArrowRight className="dark:bg-arena bg-dark-blue text-arena bg-dark dark:text-dark-blue p-2 text-3xl rounded-full" />
+          <Link href={'/servicios'}><FaArrowRight className="dark:bg-arena bg-dark-blue text-arena bg-dark dark:text-dark-blue p-2 text-3xl rounded-full" /></Link>
         </div>
         <div className="flex flex-col shadoww items-center gap-5 p-8 rounded-2xl hover:scale-105 dark:hover:bg-arena dark:hover:text-dark-blue transition-all hover:bg-dark-blue hover:text-arena">
           <div className="bg-verde-agua flex items-center justify-center rounded-full w-fit">

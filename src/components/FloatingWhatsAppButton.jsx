@@ -1,4 +1,5 @@
-import React from 'react';
+import Link from "next/link";
+import { FaWhatsapp } from "react-icons/fa";
 
 const FloatingWhatsAppButton = () => {
   const phoneNumber = '5492236343568'; // Reemplaza con tu número de teléfono en formato internacional
@@ -8,7 +9,7 @@ const FloatingWhatsAppButton = () => {
 
   const buttonStyle = {
     position: 'fixed',
-    bottom: '20px',
+    bottom: '60px',
     right: '20px',
     backgroundColor: '#25D366',
     color: 'white',
@@ -20,11 +21,9 @@ const FloatingWhatsAppButton = () => {
   };
 
   return (
-    <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
-      <button style={buttonStyle}>
-        <img src="/whatsapp-icon.png" alt="WhatsApp" style={{ width: '30px', height: '30px' }} />
-      </button>
-    </a>
+    <Link href={whatsappUrl} target="_blank" rel="noopener noreferrer" style={buttonStyle}>
+      <FaWhatsapp className="text-4xl"/>
+    </Link>
   );
 };
 

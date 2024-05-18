@@ -2,6 +2,7 @@ import { Comfortaa } from "next/font/google";
 import "./globals.css";
 import NavBar from "../components/NavBar";
 import Footer from "@/components/Footer";
+import FloatingWhatsAppButton from "@/components/FloatingWhatsAppButton";
 
 const comfortaa = Comfortaa({ subsets: ["latin"] });
 
@@ -16,6 +17,7 @@ export default function RootLayout({ children }) {
       <body className={`${comfortaa.className} dark:bg-dark-blue dark:text-arena`}>
         <NavBar />
         {children}
+        <FloatingWhatsAppButton/>
         <Footer />
       </body>
     </html>

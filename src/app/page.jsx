@@ -12,7 +12,7 @@ export default function Home() {
       <Proposal />
       <Testimonies />
       <CallToAction />
-      <FloatingWhatsAppButton/>
+      
     </div>
   );
 }
