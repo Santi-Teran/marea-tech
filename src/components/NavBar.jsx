@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import logo from '../../../public/mareatech.png'
+import logo from '../../public/mareatech.png'
 import ThemeToggle from './ThemeToggle';
 
 const NavBar = () => {

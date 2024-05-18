@@ -1,8 +1,8 @@
-import CallToAction from "./components/CallToAction";
-import Landing from "./components/Landing";
-import Proposal from "./components/Proposal";
-import Services from "./components/Services";
-import Testimonies from "./components/Testimonies";
+import CallToAction from "../components/CallToAction";
+import Landing from "../components/Landing";
+import Proposal from "../components/Proposal";
+import Services from "../components/Services";
+import Testimonies from "../components/Testimonies";
 
 export default function Home() {
   return (

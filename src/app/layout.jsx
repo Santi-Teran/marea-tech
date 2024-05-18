@@ -1,6 +1,6 @@
 import { Comfortaa } from "next/font/google";
 import "./globals.css";
-import NavBar from "./components/NavBar";
+import NavBar from "../components/NavBar";
 
 const comfortaa = Comfortaa({ subsets: ["latin"] });
 

@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import web from '../../../public/web.svg';
+import web from '../../public/web.svg';
 import { Nunito } from "next/font/google";
 
 const nunito = Nunito({ subsets: ["latin"] });

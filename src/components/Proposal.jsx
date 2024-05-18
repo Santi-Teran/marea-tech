@@ -1,9 +1,9 @@
 import { Nunito } from "next/font/google";
 import Image from "next/image";
-import attention from '../../../public/attention.svg';
-import solution from '../../../public/solution.svg';
-import detail from '../../../public/detail.svg';
-import local from '../../../public/local.svg';
+import attention from '../../public/attention.svg';
+import solution from '../../public/solution.svg';
+import detail from '../../public/detail.svg';
+import local from '../../public/local.svg';
 
 const nunito = Nunito({ subsets: ["latin"] });
 
