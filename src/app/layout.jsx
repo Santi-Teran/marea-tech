@@ -3,6 +3,7 @@ import "./globals.css";
 import NavBar from "../components/NavBar";
 import Footer from "@/components/Footer";
 import FloatingWhatsAppButton from "@/components/FloatingWhatsAppButton";
+import CallToAction from "@/components/CallToAction";
 
 const comfortaa = Comfortaa({ subsets: ["latin"] });
 
@@ -18,6 +19,7 @@ export default function RootLayout({ children }) {
         <NavBar />
         {children}
         <FloatingWhatsAppButton/>
+        <CallToAction />
         <Footer />
       </body>
     </html>

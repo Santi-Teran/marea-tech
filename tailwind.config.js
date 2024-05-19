@@ -12,6 +12,7 @@ module.exports = {
         'dark-blue': '#001022',
         'arena': '#F5F0DB',
         'verde-agua': '#00D2B2',
+        'whatsapp': '#25D366'
       },
     },
   },

@@ -7,21 +7,8 @@ const FloatingWhatsAppButton = () => {
   const encodedMessage = encodeURIComponent(message);
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
 
-  const buttonStyle = {
-    position: 'fixed',
-    bottom: '60px',
-    right: '20px',
-    backgroundColor: '#25D366',
-    color: 'white',
-    border: 'none',
-    padding: '15px',
-    borderRadius: '50%',
-    cursor: 'pointer',
-    boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)',
-  };
-
   return (
-    <Link href={whatsappUrl} target="_blank" rel="noopener noreferrer" style={buttonStyle}>
+    <Link href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="fixed bottom-16 right-5 text-white bg-whatsapp p-4 rounded-full">
       <FaWhatsapp className="text-4xl"/>
     </Link>
   );
