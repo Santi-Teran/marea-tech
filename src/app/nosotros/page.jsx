@@ -31,10 +31,12 @@ const nosotros = [
 const Nosotros = () => {
   return (
     <div className="flex flex-col items-center py-32 gap-20">
+
       <div className="flex flex-col items-center gap-5">
         <h1 className="text-5xl text-verde-agua font-black">Conoce a Marea Tech</h1>
         <h2 className={`${nunito.className} text-3xl text-center font-bold mx-32`}>Descubri quiénes somos, qué nos motiva y cómo podemos ayudarte a alcanzar tus objetivos digitales</h2>
       </div>
+
       <div className="flex flex-col items-center gap-5">
         <h3 className="text-2xl text-verde-agua font-black">Nuestro Equipo</h3>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mx-20">
@@ -67,6 +69,7 @@ const Nosotros = () => {
           </div>
         </div>
       </div>
+      
     </div>
   )
 }
