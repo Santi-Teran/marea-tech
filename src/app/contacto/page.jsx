@@ -34,7 +34,7 @@ const Contacto = () => {
             <textarea placeholder="Mensaje" className="w-full bg-transparent focus:outline-none focus:ring-0 resize-none h-40" />
             <MdOutlineMessage className="text-2xl"/>
           </div>
-          <button className={`${nunito.className} text-xl gradient w-fit py-3 px-9 rounded-xl`}>Enviar</button>
+          <button className={`${nunito.className} text-xl gradient w-fit py-3 px-9 rounded-xl hover:scale-125 transition-transform`}>Enviar</button>
         </form>
 
       </div>

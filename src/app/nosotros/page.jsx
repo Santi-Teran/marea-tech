@@ -1,32 +1,12 @@
-import { Nunito } from "next/font/google";
 import Image from "next/image";
+import nosotros from "../api/nosotros";
+import { Nunito } from "next/font/google";
 import { HiOutlineRocketLaunch } from "react-icons/hi2";
 import { IoBookOutline } from "react-icons/io5";
 import { LiaBalanceScaleSolid } from "react-icons/lia";
 import { PiHandshake } from "react-icons/pi";
 
 const nunito = Nunito({ subsets: ["latin"] });
-
-const nosotros = [
-  { 
-    id: 1,
-    name: "Nombre Apellido",
-    position: "Fundador y CEO",
-    image: '/hombre.png', // Ruta de la imagen del proyecto
-  },
-  { 
-    id: 2,
-    name: "Nombre Apellido",
-    position: "Fundador y CEO",
-    image: '/hombre.png', // Ruta de la imagen del proyecto
-  },
-  { 
-    id: 3,
-    name: "Nombre Apellido",
-    position: "Fundador y CEO",
-    image: '/hombre.png', // Ruta de la imagen del proyecto
-  },
-]
 
 const Nosotros = () => {
   return (
@@ -40,13 +20,13 @@ const Nosotros = () => {
       <div className="flex flex-col items-center gap-5">
         <h3 className="text-2xl text-verde-agua font-black">Nuestro Equipo</h3>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mx-20">
-          {nosotros.map((nosotros, index) => (
-            <div key={index} className="bg-white flex flex-col items-center rounded-xl gap-5 pb-5 shadow-xl text-dark-blue">
+          {nosotros.map((miembro) => (
+            <div key={miembro.id} className="bg-white flex flex-col items-center rounded-xl gap-5 pb-5 shadow-xl text-dark-blue">
               <div className="bg-verde-agua rounded-xl pt-5">
-                <Image src={nosotros.image} alt="" width={250} height={0} />
+                <Image src={miembro.image} alt="" width={250} height={0} />
               </div>
-                <span className={`${nunito.className} text-xl font-bold`}>{nosotros.name}</span>
-                <span className={`${nunito.className}`}>{nosotros.position}</span>
+                <span className={`${nunito.className} text-xl font-bold`}>{miembro.name}</span>
+                <span className={`${nunito.className}`}>{miembro.position}</span>
             </div>
           ))}
         </div>

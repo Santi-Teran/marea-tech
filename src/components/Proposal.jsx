@@ -29,7 +29,7 @@ const Proposal = () => {
           <Image src={local} alt="" />
         </div>
       </div>
-      <button className={`${nunito.className} text-xl font-black gradient py-4 px-12 rounded-xl`}>Contactanos</button>
+      <button className={`${nunito.className} text-xl font-black gradient py-4 px-12 rounded-xl hover:scale-125 transition-transform`}>Contactanos</button>
     </div>
   )
 }
