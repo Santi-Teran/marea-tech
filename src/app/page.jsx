@@ -1,4 +1,3 @@
-import CallToAction from "../components/CallToAction";
 import Landing from "../components/Landing";
 import Proposal from "../components/Proposal";
 import Services from "../components/Services";
